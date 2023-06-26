@@ -24,7 +24,13 @@
       </ul><form class="form-inline my-2 my-lg-0" role="search">
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="../search.json" id="search-input" placeholder="Search for" autocomplete="off"></form>
 
-      <ul class="navbar-nav"></ul></div>
+      <ul class="navbar-nav"><li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/edinburgh-seismicity-hub/ETAS.inlabru/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul></div>
 
     
   </div>
@@ -32,7 +38,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="" class="logo" alt=""><h1>Return a sample of magnitudes drawn from the GR distribution</h1>
-      
+      <small class="dont-index">Source: <a href="https://github.com/edinburgh-seismicity-hub/ETAS.inlabru/blob/HEAD/R/generateSyntheticCatalogues.R" class="external-link"><code>R/generateSyntheticCatalogues.R</code></a></small>
       <div class="d-none name"><code>sample.GR.magnitudes.Rd</code></div>
     </div>
 
@@ -69,19 +75,19 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">sample.GR.magnitudes</span><span class="op">(</span>n<span class="op">=</span><span class="fl">100</span>, beta.p<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>, M0<span class="op">=</span><span class="fl">2.5</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   [1] 2.628424 2.603155 2.658392 3.197318 3.266479 2.819594 2.609339 3.166154</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   [9] 2.738211 2.581725 2.602850 2.781169 2.922208 2.733333 2.549241 2.623098</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [17] 2.911192 3.840351 2.581854 3.370045 2.974825 2.787459 2.757894 3.457450</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [25] 2.904131 2.674880 2.743515 3.491671 2.528550 2.784183 2.783154 3.106137</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [33] 2.670396 3.769808 2.818129 2.674760 2.562631 3.031442 2.570240 3.109593</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [41] 2.859589 3.087629 2.536944 2.805289 2.570549 2.646264 2.732522 2.932195</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [49] 2.591647 2.766897 2.684901 2.565135 4.309415 3.440930 2.595653 2.500972</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [57] 3.255625 2.538130 2.973504 3.250170 2.728691 2.867497 2.737155 2.906091</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [65] 2.713054 2.589946 3.199352 2.608779 3.639775 4.270911 2.954448 3.928663</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [73] 4.015621 2.648991 2.867644 3.329276 2.530419 2.745838 2.646105 4.092225</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [81] 2.524025 3.579738 2.666115 2.523642 2.641405 2.631839 3.519134 2.535573</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [89] 2.876850 2.601944 2.892313 2.607488 2.651285 2.667419 2.741875 2.619812</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [97] 2.985389 2.593431 4.619659 2.713448</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   [1] 2.586895 2.756041 2.609535 2.705473 2.550962 2.757021 3.363081 3.157977</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   [9] 2.670478 2.594263 2.672836 2.552466 2.687712 2.851205 2.686568 3.554178</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [17] 2.708816 2.779994 2.557998 3.642494 2.807824 2.753509 4.501633 2.562751</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [25] 2.777693 2.836889 2.521489 2.502923 2.938838 2.523370 2.523909 2.532601</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [33] 3.085058 2.565719 2.573414 2.956698 2.518916 2.666477 3.890548 3.266856</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [41] 2.887183 2.920907 3.833776 3.978541 2.691393 2.613259 2.711971 2.507522</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [49] 3.143771 2.632595 3.139803 2.707419 2.836379 2.732766 2.515060 2.639220</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [57] 2.575365 2.551277 3.656329 2.548577 2.793004 3.548576 2.540549 2.694647</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [65] 2.701708 2.775668 2.595356 2.871938 2.587793 2.891752 2.747554 2.855988</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [73] 2.521393 3.092556 3.008357 2.515908 3.161103 2.694146 2.563460 2.992627</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [81] 4.087905 2.961271 3.373445 2.878870 3.294644 2.870001 2.642915 3.273241</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [89] 2.911734 3.002077 3.297436 3.076920 2.944610 2.685285 3.470909 2.552779</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [97] 2.762958 4.298066 2.779919 2.517449</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
